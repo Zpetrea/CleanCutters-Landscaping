@@ -1,17 +1,23 @@
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: url('assets/background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: #fff;
+    background: #f4f4f4;
+    color: #333;
 }
 
+/* Header Navigation */
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px;
-    background: rgba(34, 49, 63, 0.8);
+    background: rgba(34, 49, 63, 0.9);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 .logo img {
@@ -19,16 +25,31 @@ header {
 }
 
 nav a {
-    color: #fff;
+    color: white;
     text-decoration: none;
     margin: 0 15px;
     font-size: 18px;
+    transition: 0.3s;
 }
 
+nav a:hover {
+    color: lightblue;
+}
+
+/* Hero Section */
 .hero {
     text-align: center;
-    padding: 100px;
-    background: rgba(0, 0, 0, 0.5);
+    padding: 150px 20px;
+    background: url('assets/hero-image.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.hero p {
+    font-size: 1.2em;
 }
 
 .btn {
@@ -45,20 +66,11 @@ nav a {
     background: darkgreen;
 }
 
-.contact {
-    text-align: center;
-    padding: 50px;
-}
-
-form {
-    background: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 5px;
-    color: black;
-}
-
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
     background: rgba(0, 0, 0, 0.7);
+    color: white;
+    margin-top: 20px;
 }
