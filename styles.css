@@ -4,6 +4,7 @@
 header {
     background-color: #91BA88; /* Darker header background */
     padding: 20px 0; /* Increased padding */
+     text-align: center; /* Center the footer content */
 }
 
 nav {
@@ -35,6 +36,7 @@ h1, h2, h3 {
 footer {
     background-color: #91BA88;
     padding: 20px 0;
+     text-align: center; /* Center the footer content */
 }
 
 /* Contact Form Styling */
