@@ -9,16 +9,19 @@ header {
 
 nav {
     max-width: 1200px; /* Wider container */
+     text-align: center; /* Center the footer content */
 }
 
 nav ul {
     display: flex;
     justify-content: flex-end; /* Align menu to the right */
+     text-align: center; /* Center the footer content */
 }
 
 nav a {
     padding: 10px 15px; /* More padding around links */
     border-radius: 5px; /* Rounded link backgrounds on hover */
+     text-align: center; /* Center the footer content */
 }
 
 
