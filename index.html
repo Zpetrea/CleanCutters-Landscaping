@@ -6,29 +6,43 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
     <style>
+        nav {
+            display: flex;
+            justify-content: center; /* Center the nav items horizontally */
+            align-items: center; /* Vertically align items */
+            padding: 10px; /* Add some padding to the nav */
+        }
+
         nav ul {
             display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0; /* Remove default ul margins */
             justify-content: center; /* Center the list items */
-            list-style: none; /* Remove bullet points */
-            padding: 0; /* Remove default padding */
         }
 
         nav li {
-            margin: 0 15px; /* Add spacing between list items */
+            margin: 0 15px;
         }
-        .hero {
-            text-align: center; /* Center the content within the hero */
-        }
+
         .cta-button {
-            display: inline-block; /* Make the button behave like an inline element */
-            padding: 10px 20px; /* Adjust padding as needed */
-            margin: 10px; /* Add some margin around the button */
-            text-decoration: none; /* Remove underlines from links */
-            background-color: #007bff; /* Example background color */
-            color: white; /* Example text color */
-            border: none; /* Remove default border */
-            border-radius: 5px; /* Add rounded corners */
-            cursor: pointer; /* Make the cursor a pointer on hover */
+            display: inline-block;
+            padding: 10px 20px;
+            margin-left: 20px; /* Space between last nav item and button */
+            text-decoration: none;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 20px; /* Space between hero and nav */
+        }
+        footer {
+            text-align: center;
         }
 
     </style>
@@ -38,16 +52,15 @@
         <div class="hero">
             <h1>Welcome to CleanCutters Landscaping</h1>
             <p>Your dream landscape starts here. We offer professional landscaping services for residential and commercial properties.</p>
-            
         </div>
         <nav>
-         <ul class="hero">
+            <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-             <a href="#" class="cta-button">Get a Free Quote</a>
             </ul>
-            </nav>
+            <a href="#" class="cta-button">Get a Free Quote</a>
+        </nav>
     </header>
 
     <main>
