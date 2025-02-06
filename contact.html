@@ -6,53 +6,13 @@
     <title>Contact Us - CleanCutters Landscaping</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            margin: 0;
-        }
-
-        main {
-            flex: 1;
-            padding: 20px;
-        }
-
-        footer {
-            background-color: #91BA88;
-            padding: 10px;
-            text-align: center;
-        }
-
-        header {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 10px;
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        nav li {
-            margin: 0 15px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #333;
-        }
+        /* ... (Your other CSS styles) ... */
 
         form {
             display: flex;
             flex-direction: column;
-            /* REMOVE or INCREASE max-width */
-            margin: 20px auto; /* Keep centering */
-            width: 80%; /* Example: Take up 80% of the parent's width */
+            width: 80%; /* Or a specific width if you prefer */
+            margin: 20px auto;
         }
 
         label {
@@ -60,17 +20,18 @@
         }
 
         input, textarea {
-            padding: 8px;
+            padding: 12px; /* Increased padding here! */
             margin-bottom: 10px;
             border: 1px solid #ccc;
             border-radius: 4px;
-            box-sizing: border-box; /* Include padding and border in element's total width and height */
+            box-sizing: border-box; /* Important: Keeps padding within the element's size */
+            font-size: 16px; /* Makes the text inside larger too */
         }
 
         textarea {
-            resize: vertical; /* Allow vertical resizing */
+            resize: vertical;
+            min-height: 100px; /* Ensures a reasonable starting height for the textarea */
         }
-
 
         button {
             padding: 10px 15px;
@@ -79,38 +40,12 @@
             border: none;
             border-radius: 4px;
             cursor: pointer;
+            font-size: 16px; /* Consistent font size with input fields */
         }
+
+        /* ... (Rest of your CSS styles) ... */
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <h1>Contact Us</h1>
-        <form action="submit_contact.php" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <button type="submit">Send Message</button>
-        </form>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 CleanCutters Landscaping. All rights reserved.</p>
-    </footer>
-</body>
+    </body>
 </html>
