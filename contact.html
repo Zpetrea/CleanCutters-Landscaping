@@ -4,50 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - CleanCutters Landscaping</title>
-    <link rel="stylesheet" href="styles.css">  </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <h1>Contact Us</h1>
-        <form action="submit_contact.php" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <button type="submit">Send Message</button>
-        </form>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 CleanCutters Landscaping. All rights reserved.</p>
-    </footer>
-
-<style>
+    <link rel="stylesheet" href="styles.css">
+    <style>
         body {
             display: flex;
             flex-direction: column;
             min-height: 100vh;
             margin: 0;
-            font-family: sans-serif; /* Added a default font */
+            font-family: sans-serif;
         }
 
         main {
-            flex: 1;
+            flex: 1; /* Allows main to take up available space */
             padding: 20px;
+            display: flex; /* Enable flexbox on main */
+            justify-content: center; /* Center the form horizontally */
+            align-items: flex-start; /* Align form to the top of main */
         }
 
         footer {
@@ -82,9 +54,9 @@
         form {
             display: flex;
             flex-direction: column;
-            width: 80%;
-            max-width: 600px; /* Added a max-width for larger screens */
-            margin: 20px auto;
+            width: 80%; /* Takes 80% of the *main* container */
+            max-width: 600px; /* But not more than 600px */
+            margin: 0; /* Remove default margins since main centers it */
         }
 
         label {
@@ -115,5 +87,36 @@
             font-size: 16px;
         }
     </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+        <form action="submit_contact.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 CleanCutters Landscaping. All rights reserved.</p>
+    </footer>
 </body>
 </html>
