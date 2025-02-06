@@ -26,16 +26,16 @@
 
         header {
             display: flex;
-            justify-content: center; /* Center the nav */
+            justify-content: center;
             align-items: center;
-            padding: 10px; /* Add some padding */
+            padding: 10px;
         }
 
         nav ul {
             display: flex;
             list-style: none;
             padding: 0;
-            margin: 0; /* Remove default ul margins */
+            margin: 0;
         }
 
         nav li {
@@ -50,8 +50,9 @@
         form {
             display: flex;
             flex-direction: column;
-            max-width: 500px;
-            margin: 20px auto;
+            /* REMOVE or INCREASE max-width */
+            margin: 20px auto; /* Keep centering */
+            width: 80%; /* Example: Take up 80% of the parent's width */
         }
 
         label {
@@ -63,7 +64,13 @@
             margin-bottom: 10px;
             border: 1px solid #ccc;
             border-radius: 4px;
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
         }
+
+        textarea {
+            resize: vertical; /* Allow vertical resizing */
+        }
+
 
         button {
             padding: 10px 15px;
