@@ -5,11 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        nav ul {
+            display: flex;
+            justify-content: center; /* Center the list items */
+            list-style: none; /* Remove bullet points */
+            padding: 0; /* Remove default padding */
+        }
+
+        nav li {
+            margin: 0 15px; /* Add spacing between list items */
+        }
+        .hero {
+            text-align: center; /* Center the content within the hero */
+        }
+        .cta-button {
+            display: inline-block; /* Make the button behave like an inline element */
+            padding: 10px 20px; /* Adjust padding as needed */
+            margin: 10px; /* Add some margin around the button */
+            text-decoration: none; /* Remove underlines from links */
+            background-color: #007bff; /* Example background color */
+            color: white; /* Example text color */
+            border: none; /* Remove default border */
+            border-radius: 5px; /* Add rounded corners */
+            cursor: pointer; /* Make the cursor a pointer on hover */
+        }
+
+    </style>
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">CleanCutters Landscaping</div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -19,7 +45,9 @@
         <div class="hero">
             <h1>Welcome to CleanCutters Landscaping</h1>
             <p>Your dream landscape starts here. We offer professional landscaping services for residential and commercial properties.</p>
-            <a href="#" class="cta-button">Get a Free Quote</a> </div>
+            <a href="about.html" class="cta-button">Learn More</a>
+            <a href="#" class="cta-button">Get a Free Quote</a>
+        </div>
     </header>
 
     <main>
