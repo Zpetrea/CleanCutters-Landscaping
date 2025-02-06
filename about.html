@@ -5,7 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | Clean Cutters Landscaping</title>
     <link rel="stylesheet" href="styles.css">
-    
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure body takes up full viewport height */
+            margin: 0; /* Remove default body margins */
+        }
+
+        main {  /* Use main instead of section.content for better semantics*/
+            flex: 1; /* Allow main content to expand and fill available space */
+            padding: 20px; /* Add some padding around content */
+        }
+        footer {
+            background-color: #f0f0f0; /* Example footer background color */
+            padding: 10px;
+            text-align: center;
+        }
+        header {
+            display: flex;
+            justify-content: space-between; /* Distribute space between logo and nav */
+            align-items: center;
+            padding: 10px;
+        }
+
+        .logo img {
+            max-height: 50px; /* Adjust as needed */
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333; /* Example link color */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -19,12 +52,10 @@
         </nav>
     </header>
 
-    <section class="content">
-        <h1>About Our Mission</h1>
+    <main>  <h1>About Our Mission</h1>
         <p>We are a professional landscaping company that has provided residential and commercial services for the Western region of North Carolina for over 45 years.
         If you need basic lawn maintenance, professional retaining walls, or scheduled season service, we can help you with all of your needs.</p>
-      
-    </section>
+    </main>
 
     <footer>
         <p>&copy; 2025 Clean Cutters Landscaping. All rights reserved.</p>
