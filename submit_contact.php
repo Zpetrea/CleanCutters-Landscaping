@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $message = trim($_POST["message"]);
 
     if ($name && $email && $message) {
-        $to = "your-email@example.com"; // CHANGE THIS
+        $to = "zpetrea1@gmail.com"; // Replace with your actual email address
         $subject = "New Contact or Quote Request from $name";
         $body = "Name: $name\nEmail: $email\nPhone: $phone\n\nMessage:\n$message";
         $headers = "From: $name <$email>";
