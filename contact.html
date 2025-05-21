@@ -1,43 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Clean Cutters Landscaping provides residential and commercial landscaping services in Western North Carolina.">
+  <meta name="keywords" content="Landscaping, Lawn Care, Hardscaping, Western NC, Charlotte landscaping">
+  <meta name="author" content="Clean Cutters Landscaping">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon"/>
   <title>Contact Us | Clean Cutters Landscaping</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  <script defer>
+    document.addEventListener("DOMContentLoaded", function() {
+      const toggle = document.getElementById('menu-toggle');
+      const nav = document.getElementById('mobile-nav');
+      toggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+      });
+    });
+  </script>
+
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <img src="assets/logo.png" alt="Logo">
+  
+  <header class="main-header">
+    <div class="container nav-container">
+      <div class="logo">
+        <img src="assets/logo.png" alt="Clean Cutters Logo">
+      </div>
+      <nav>
+        <div id="menu-toggle" class="menu-icon">☰</div>
+        <ul class="nav-links" id="mobile-nav">
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="about.html" >About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
-  <main>
-    <h1>Contact Us</h1>
-    <form action="submit_contact.php" method="post">
-      <label for="name">Name:</label>
-      <input type="text" name="name" id="name" required />
+  
+  <header class="main-header">
+    <div class="container nav-container">
+      <div class="logo">
+        <img src="assets/logo.png" alt="Clean Cutters Logo">
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-      <label for="email">Email:</label>
-      <input type="email" name="email" id="email" required />
-
-      <label for="message">Message:</label>
-      <textarea name="message" id="message" rows="5" required></textarea>
-
-      <button type="submit">Send Message</button>
-    </form>
+  <main class="container">
+    <section class="featured-services">
+      <h1>Contact Us</h1>
+      <p>Have a question or want to schedule a consultation? Reach out to us below and we'll respond shortly.</p>
+      <form action="submit_contact.php" method="POST" class="styled-form">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Full Name" required>
+          <input type="text" name="phone" placeholder="Phone Number" required>
+        </div>
+        <div class="form-row">
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="text" name="city" placeholder="City">
+        </div>
+        <textarea name="message" rows="4" placeholder="Message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Clean Cutters Landscaping. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2025 Clean Cutters Landscaping. All rights reserved.</p>
+    </div>
   </footer>
+
 </body>
 </html>

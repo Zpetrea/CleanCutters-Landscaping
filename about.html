@@ -1,32 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Clean Cutters Landscaping provides residential and commercial landscaping services in Western North Carolina.">
+  <meta name="keywords" content="Landscaping, Lawn Care, Hardscaping, Western NC, Charlotte landscaping">
+  <meta name="author" content="Clean Cutters Landscaping">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon"/>
   <title>About Us | Clean Cutters Landscaping</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  <script defer>
+    document.addEventListener("DOMContentLoaded", function() {
+      const toggle = document.getElementById('menu-toggle');
+      const nav = document.getElementById('mobile-nav');
+      toggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+      });
+    });
+  </script>
+
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <img src="assets/logo.png" alt="Logo">
+  
+  <header class="main-header">
+    <div class="container nav-container">
+      <div class="logo">
+        <img src="assets/logo.png" alt="Clean Cutters Logo">
+      </div>
+      <nav>
+        <div id="menu-toggle" class="menu-icon">☰</div>
+        <ul class="nav-links" id="mobile-nav">
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="contact.html" >Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
-  <main>
-    <h1>About Our Mission</h1>
-    <p>We are a professional landscaping company serving Western North Carolina for over 45 years. Whether you need basic maintenance, retaining walls, or scheduled seasonal service — we've got you covered.</p>
+  
+  <header class="main-header">
+    <div class="container nav-container">
+      <div class="logo">
+        <img src="assets/logo.png" alt="Clean Cutters Logo">
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="featured-services">
+      <h1>About Our Mission</h1>
+      <p>We are a professional landscaping company that has provided residential and commercial services for the Western region of North Carolina for over 45 years. If you need basic lawn maintenance, professional retaining walls, or scheduled seasonal service, we can help you with all of your needs.</p>
+      <p>Our team combines decades of experience with a passion for transforming outdoor spaces into beautiful, functional landscapes. We believe in quality craftsmanship, transparent communication, and customer satisfaction.</p>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Clean Cutters Landscaping. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2025 Clean Cutters Landscaping. All rights reserved.</p>
+    </div>
   </footer>
+
 </body>
 </html>
