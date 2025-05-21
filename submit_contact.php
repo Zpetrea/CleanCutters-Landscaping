@@ -2,12 +2,13 @@
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $name = strip_tags(trim($_POST["name"]));
     $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+    $phone = isset($_POST["phone"]) ? strip_tags(trim($_POST["phone"])) : 'N/A';
     $message = trim($_POST["message"]);
 
     if ($name && $email && $message) {
-        $to = "your-email@example.com"; // Change to your email address
-        $subject = "New Contact Submission from $name";
-        $body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
+        $to = "your-email@example.com"; // CHANGE THIS
+        $subject = "New Contact or Quote Request from $name";
+        $body = "Name: $name\nEmail: $email\nPhone: $phone\n\nMessage:\n$message";
 
         $headers = "From: $name <$email>";
 

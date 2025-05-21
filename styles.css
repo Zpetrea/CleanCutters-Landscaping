@@ -261,4 +261,49 @@ body {
     text-align: center;
     color: white;
   }
+  .quote-section, .map-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #ffffff;
+    margin-top: 40px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .quote-form {
+    max-width: 600px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .quote-form input,
+  .quote-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  .quote-form button {
+    background-color: #3498db;
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .quote-form button:hover {
+    background-color: #2980b9;
+  }
+  
+  .map-container {
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
   
