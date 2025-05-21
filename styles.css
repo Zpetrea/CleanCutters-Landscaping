@@ -1,309 +1,167 @@
+
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    font-family: 'Roboto', sans-serif; /* Primary font */
-    line-height: 1.6;
-    color: #333;
-    background-color: #f8f8f8;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
 }
-
-header {
-    background-color: #91BA88;
-    padding: 20px 0;
-    text-align: center;
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
 }
-
-nav {
-    max-width: 1200px;
-    display: flex;
-    justify-content: space-between; /* Space logo and nav */
-    align-items: center;
-    flex-direction: row;
-    margin: 0 auto; /* Center the nav horizontally */
+.main-header {
+  background: #91BA88;
+  padding: 10px 0;
 }
-
-.logo {
-    margin-left: 20px;
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
-.logo img {
-    max-height: 50px;
-    vertical-align: middle;
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
-
-nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    margin-right: 20px;
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
 }
-
-nav li {
-    margin: 0 15px;
+.nav-links a.active, .nav-links a:hover {
+  border-bottom: 2px solid #fff;
 }
-
-nav a {
-    color: #333; /* Dark grey text for links */
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+.hero-banner {
+  background: url('images/hero-landscape.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
 }
-
-nav a:hover {
-    background-color: rgba(0, 0, 0, 0.1); /* Slightly transparent black on hover */
+.hero-banner::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.4);
+  z-index: 1;
 }
-
-main {
-    flex: 1;
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 40px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.hero-content {
+  position: relative;
+  z-index: 2;
 }
-
-h1, h2, h3 {
-    color: #2c3e50;
-    font-family: 'Oswald', sans-serif;
-}
-
-footer {
-    background-color: #91BA88;
-    padding: 20px 0;
-    text-align: center;
-}
-
-form {
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-label {
-    margin-bottom: 5px;
-    color: #555;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    border-radius: 5px;
-}
-
-button {
-    background-color: #3498db;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #2980b9;
-}
-
-/* Responsive adjustments (optional - put at the end of your CSS) */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav li {
-        margin: 10px 0;
-    }
-}
-nav a.active {
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
-.hero {
-    text-align: center;
-    margin: 20px 0;
-}
-
 .cta-button {
-    background-color: #3498db;
-    color: white;
-    padding: 12px 24px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+  display: inline-block;
+  background: #3498db;
+  color: white;
+  padding: 12px 24px;
+  margin-top: 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
 }
-
 .cta-button:hover {
-    background-color: #2980b9;
+  background: #2980b9;
 }
-
+.featured-services {
+  text-align: center;
+  padding: 60px 20px;
+}
 .service-grid {
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
 }
-
-.service img {
-    max-width: 100%;
-    border-radius: 5px;
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
 }
-/* Modern Reset and Container */
-body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    color: #333;
-    background-color: #f4f4f4;
-  }
-  .container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 20px;
-  }
-  
-  /* Header and Navigation */
-  .main-header {
-    background: #91BA88;
-    padding: 10px 0;
-  }
-  .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  .nav-links a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-  }
-  .nav-links a.active, .nav-links a:hover {
-    border-bottom: 2px solid #fff;
-  }
-  
-  /* Hero Banner */
-  .hero-banner {
-    background: url('images/hero-landscape.jpg') no-repeat center center/cover;
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
-    position: relative;
-  }
-  .hero-banner::after {
-    content: '';
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0,0,0,0.4);
-    z-index: 1;
-  }
-  .hero-content {
-    position: relative;
-    z-index: 2;
-  }
-  .cta-button {
-    display: inline-block;
-    background: #3498db;
-    color: white;
-    padding: 12px 24px;
-    margin-top: 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s;
-  }
-  .cta-button:hover {
-    background: #2980b9;
-  }
-  
-  /* Service Cards */
-  .featured-services {
-    text-align: center;
-    padding: 60px 20px;
-  }
-  .service-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    margin-top: 30px;
-  }
-  .card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
-  }
-  .card:hover {
-    transform: translateY(-5px);
-  }
-  .card img {
-    max-width: 100%;
-    border-radius: 5px;
-  }
-  
-  /* Footer */
-  footer {
-    background: #91BA88;
-    padding: 20px 0;
-    text-align: center;
-    color: white;
-  }
-  .quote-section, .map-section {
-    text-align: center;
-    padding: 60px 20px;
-    background-color: #ffffff;
-    margin-top: 40px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
-  }
-  
-  .quote-form {
-    max-width: 600px;
-    margin: 30px auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .quote-form input,
-  .quote-form textarea {
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 16px;
-  }
-  
-  .quote-form button {
-    background-color: #3498db;
-    color: white;
-    padding: 14px;
-    font-size: 16px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  .quote-form button:hover {
-    background-color: #2980b9;
-  }
-  
-  .map-container {
-    margin-top: 20px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
-  
+.card:hover {
+  transform: translateY(-5px);
+}
+.card img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+footer {
+  background: #91BA88;
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+}
+.quote-hero {
+  position: relative;
+  background: url('images/lawn-care.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 80px 20px;
+}
+.quote-hero .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.quote-content {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 2;
+}
+.quote-form-box, .location-box {
+  flex: 1 1 48%;
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+.quote-form-box h2,
+.location-box h2 {
+  margin-bottom: 20px;
+  font-family: 'Oswald', sans-serif;
+  color: #2c3e50;
+}
+.styled-form .form-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+.styled-form input,
+.styled-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+}
+.styled-form button {
+  margin-top: 10px;
+  background-color: #91BA88;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.styled-form button:hover {
+  background-color: #7ea476;
+}
+.location-list {
+  list-style: none;
+  padding: 0;
+  font-size: 16px;
+}
+.location-list li {
+  margin-bottom: 10px;
+}

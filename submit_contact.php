@@ -9,7 +9,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $to = "your-email@example.com"; // CHANGE THIS
         $subject = "New Contact or Quote Request from $name";
         $body = "Name: $name\nEmail: $email\nPhone: $phone\n\nMessage:\n$message";
-
         $headers = "From: $name <$email>";
 
         if (mail($to, $subject, $body, $headers)) {
