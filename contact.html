@@ -1,76 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - CleanCutters Landscaping</title>
-    <link rel="stylesheet" href="styles.css">
-     <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh; /* Ensure body takes up full viewport height */
-            margin: 0; /* Remove default body margins */
-        }
-
-        main {  /* Use main instead of section.content for better semantics*/
-            flex: 1; /* Allow main content to expand and fill available space */
-            padding: 20px; /* Add some padding around content */
-        }
-        footer {
-            background-color: #91BA88; /* Example footer background color */
-            padding: 10px;
-            text-align: center;
-        }
-        header {
-            display: flex;
-            justify-content: space-between; /* Distribute space between logo and nav */
-            align-items: center;
-            padding: 10px;
-        }
-
-        .logo img {
-            max-height: 50px; /* Adjust as needed */
-        }
-
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #333; /* Example link color */
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Clean Cutters Landscaping</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <div class="logo">
+      <img src="assets/logo.png" alt="Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <div class="contact-container">
-            <h1>Contact Us</h1>
-            <form action="submit_contact.php" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+  <main>
+    <h1>Contact Us</h1>
+    <form action="submit_contact.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" required />
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" required />
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+      <label for="message">Message:</label>
+      <textarea name="message" id="message" rows="5" required></textarea>
 
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </main>
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
 
-    <footer>
-        <p>&copy; 2025 CleanCutters Landscaping. All rights reserved.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 Clean Cutters Landscaping. All rights reserved.</p>
+  </footer>
 </body>
 </html>

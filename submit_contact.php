@@ -1,17 +1,26 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = htmlspecialchars($_POST['name']); // Sanitize!
-    $email = htmlspecialchars($_POST['email']); // Sanitize!
-    $message = htmlspecialchars($_POST['message']); // Sanitize!
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $name = strip_tags(trim($_POST["name"]));
+    $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+    $message = trim($_POST["message"]);
 
-    // Now you can send an email, store it in a database, etc.
-    $to = "cleancutterslandscaping@gmail.com"; // Replace with your email address
-    $subject = "New Contact Form Submission";
-    $body = "Name: $name\nEmail: $email\nMessage: $message";
-    mail($to, $subject, $body);
+    if ($name && $email && $message) {
+        $to = "your-email@example.com"; // Change to your email address
+        $subject = "New Contact Submission from $name";
+        $body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
 
-    // Redirect to a thank you page (recommended)
-    header("Location: thank_you.html"); // Create thank_you.html
-    exit();
+        $headers = "From: $name <$email>";
+
+        if (mail($to, $subject, $body, $headers)) {
+            header("Location: contact.html?status=success");
+            exit;
+        } else {
+            header("Location: contact.html?status=error");
+            exit;
+        }
+    } else {
+        header("Location: contact.html?status=invalid");
+        exit;
+    }
 }
 ?>
