@@ -157,3 +157,108 @@ nav a.active {
     max-width: 100%;
     border-radius: 5px;
 }
+/* Modern Reset and Container */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+  }
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+  }
+  
+  /* Header and Navigation */
+  .main-header {
+    background: #91BA88;
+    padding: 10px 0;
+  }
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  .nav-links a.active, .nav-links a:hover {
+    border-bottom: 2px solid #fff;
+  }
+  
+  /* Hero Banner */
+  .hero-banner {
+    background: url('images/hero-landscape.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+  }
+  .hero-banner::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 1;
+  }
+  .hero-content {
+    position: relative;
+    z-index: 2;
+  }
+  .cta-button {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 12px 24px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  .cta-button:hover {
+    background: #2980b9;
+  }
+  
+  /* Service Cards */
+  .featured-services {
+    text-align: center;
+    padding: 60px 20px;
+  }
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+  }
+  .card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  .card img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  /* Footer */
+  footer {
+    background: #91BA88;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+  }
+  

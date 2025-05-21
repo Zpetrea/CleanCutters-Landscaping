@@ -2,56 +2,62 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Clean Cutters Landscaping | Home</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <img src="assets/logo.png" alt="Clean Cutters Landscaping Logo">
+  <header class="main-header">
+    <div class="container nav-container">
+      <div class="logo">
+        <img src="assets/logo.png" alt="Clean Cutters Logo">
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <h1>Welcome to Clean Cutters Landscaping</h1>
-      <p>Your dream landscape starts here. We provide professional services for residential and commercial properties in Western NC.</p>
+  <section class="hero-banner">
+    <div class="hero-content">
+      <h1>Your Dream Landscape Starts Here</h1>
+      <p>Professional landscaping for homes & businesses in Western NC for 45+ years.</p>
       <a href="contact.html" class="cta-button">Get a Free Quote</a>
-    </section>
+    </div>
+  </section>
 
+  <main class="container">
     <section class="featured-services">
-      <h2>Our Featured Services</h2>
+      <h2>Our Services</h2>
       <div class="service-grid">
-        <div class="service">
+        <div class="card">
           <img src="images/lawn-care.jpg" alt="Lawn Care">
           <h3>Lawn Care</h3>
-          <p>Regular mowing, fertilization, and weed control to keep your lawn healthy and green.</p>
+          <p>Mowing, fertilization & weed control to keep your lawn lush and green.</p>
         </div>
-        <div class="service">
+        <div class="card">
           <img src="images/landscape-design.jpg" alt="Landscape Design">
           <h3>Landscape Design</h3>
-          <p>Custom design and installation to transform your outdoor space into a beautiful oasis.</p>
+          <p>Custom designs to bring your outdoor space to life.</p>
         </div>
-        <div class="service">
+        <div class="card">
           <img src="images/hardscaping.jpg" alt="Hardscaping">
           <h3>Hardscaping</h3>
-          <p>Patios, walkways, and retaining walls for function and curb appeal.</p>
+          <p>Patios, retaining walls & paths that add beauty and function.</p>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Clean Cutters Landscaping. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2025 Clean Cutters Landscaping. All rights reserved.</p>
+    </div>
   </footer>
 </body>
 </html>
