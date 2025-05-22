@@ -21,21 +21,30 @@
   </script>
 </head>
 <body>
-  <header class="main-header">
-    <div class="container nav-container">
-      <div class="logo">
-        <img src="assets/logo.png" alt="Clean Cutters Logo">
-      </div>
-      <nav>
-        <div id="menu-toggle" class="menu-icon">☰</div>
-        <ul class="nav-links" id="mobile-nav">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+  
+<header class="main-header">
+  <div class="container nav-container">
+    <div class="logo">
+      <img src="assets/logo.png" alt="Clean Cutters Logo">
     </div>
-  </header>
+    <nav class="nav-center">
+      <ul class="nav-links" id="mobile-nav">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html" class="">About</a></li>
+        <li><a href="contact.html" class="">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-contact">
+      <a href="tel:8283816257" class="phone-number">(828) 381-6257</a>
+      <div class="social-icons">
+        <a href="#"><img src="assets/facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="assets/instagram.svg" alt="Instagram"></a>
+        <a href="#"><img src="assets/linkedin.svg" alt="LinkedIn"></a>
+      </div>
+    </div>
+  </div>
+</header>
+
 
   <section class="hero-banner">
     <div class="hero-content">
@@ -60,9 +69,9 @@
           <p>Custom designs to bring your outdoor space to life.</p>
         </div>
         <div class="card">
-          <img src="images/hardscaping.jpg" alt="Hardscaping">
-          <h3>Hardscaping</h3>
-          <p>Patios, retaining walls & paths that add beauty and function.</p>
+          <img src="images/seasonal.jpg" alt="Seasonal">
+          <h3>Seasonal Maintenace</h3>
+          <p> Adjusting care practices, like mowing, watering, fertilizing, and aerating, based on the specific needs of your lawn during each season to maintain its health and appearance.</p>
         </div>
       </div>
     </section>
@@ -73,8 +82,8 @@
         <p>Tell us about your project and we'll get back to you with a custom quote.</p>
         <form action="submit_contact.php" method="POST" class="styled-form">
           <div class="form-row">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
             <input type="text" name="phone" placeholder="Phone Number" required>
           </div>
           <textarea name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
@@ -95,10 +104,20 @@
     </section>
   </main>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Clean Cutters Landscaping. All rights reserved.</p>
+  
+<footer class="site-footer">
+  <div class="container footer-container">
+    <p>&copy; 2025 Clean Cutters Landscaping. All rights reserved.</p>
+    <div class="footer-contact">
+      <a href="tel:8283816257">(828) 381-6257</a>
+      <div class="social-icons">
+        <a href="#"><img src="assets/facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="assets/instagram.svg" alt="Instagram"></a>
+        <a href="#"><img src="assets/linkedin.svg" alt="LinkedIn"></a>
+      </div>
     </div>
-  </footer>
+  </div>
+</footer>
+
 </body>
 </html>
