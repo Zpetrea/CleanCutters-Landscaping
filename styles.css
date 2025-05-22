@@ -287,3 +287,47 @@ footer {
   width: 20px;
   filter: invert(18%) sepia(8%) saturate(558%) hue-rotate(169deg) brightness(96%) contrast(87%);
 }
+
+/* Split Banner Hero Section */
+.split-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+  min-height: 300px;
+}
+
+.hero-img-half {
+  flex: 1;
+  min-width: 300px;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.hero-img-half img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-text-half {
+  flex: 1;
+  min-width: 300px;
+  background-color: #2C3E50;
+  color: white;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-text-half h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero-text-half p {
+  margin-bottom: 1em;
+  font-size: 16px;
+  line-height: 1.6;
+}
