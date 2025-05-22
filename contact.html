@@ -66,19 +66,27 @@
     <section class="featured-services">
       <h1>Contact Us</h1>
       <p>Have a question or want to schedule a consultation? Reach out to us below and we'll respond shortly.</p>
-      <form action="submit_contact.php" method="POST" class="styled-form">
-        <div class="form-row">
-          <input type="text" name="name" placeholder="Full Name" required>
-          <input type="text" name="phone" placeholder="Phone Number" required>
-        </div>
-        <div class="form-row">
-          <input type="email" name="email" placeholder="Email" required>
-          <input type="text" name="city" placeholder="City">
-        </div>
-        <textarea name="message" rows="4" placeholder="Tell us about your project" required></textarea>
-        <button type="submit">Submit</button>
-      </form>
-    </section>
+      <form action="https://formspree.io/f/xanozddp" method="POST" class="styled-form" onsubmit="return handleSubmit(this)">
+  <div class="form-row">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="text" name="phone" placeholder="Phone Number" required>
+    <input type="text" name="city" placeholder="City" required>
+  </div>
+  <textarea name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+
+  <!-- Honeypot field (hidden from humans) -->
+  <input type="text" name="_gotcha" style="display:none">
+
+  <button type="submit">Send</button>
+</form>
+
+<script>
+function handleSubmit(form) {
+  alert('Thank you! Your message has been submitted successfully.');
+  return true;
+}
+</script></section>
   </main>
   
 <footer class="site-footer">
