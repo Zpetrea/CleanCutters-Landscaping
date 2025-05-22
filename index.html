@@ -78,20 +78,31 @@
       </div>
     </section>
 
-    <section class="quote-bubble-section">
+   <section class="quote-bubble-section">
       <div class="quote-bubble">
         <h2>Request a Free Quote</h2>
         <p>Tell us about your project and we'll get back to you with a custom quote.</p>
-        <form action="submit_contact.php" method="POST" class="styled-form">
-          <div class="form-row">
-            <input type="text" name="name" placeholder="Name" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="text" name="phone" placeholder="Phone Number" required>
-          </div>
-          <textarea name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
-          <button type="submit">Submit Request</button>
-        </form>
-      </div>
+        <form action="https://formspree.io/f/xanozddp" method="POST" class="styled-form" onsubmit="return handleSubmit(this)">
+  <div class="form-row">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="text" name="phone" placeholder="Phone Number" required>
+    <input type="text" name="city" placeholder="City" required>
+  </div>
+  <textarea name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+
+  <!-- Honeypot field (hidden from humans) -->
+  <input type="text" name="_gotcha" style="display:none">
+
+  <button type="submit">Send</button>
+</form>
+
+<script>
+function handleSubmit(form) {
+  alert('Thank you! Your message has been submitted successfully.');
+  return true;
+}
+</script></div>
     </section>
 
     <section class="map-section">
@@ -105,7 +116,6 @@
       </div>
     </section>
   </main>
-
   
 <footer class="site-footer">
   <div class="container footer-container">
