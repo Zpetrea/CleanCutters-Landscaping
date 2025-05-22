@@ -31,13 +31,7 @@ body {
 .nav-links a.active, .nav-links a:hover {
   border-bottom: 2px solid #fff;
 }
-.hero-banner {
-  background: url('images/hero-landscape.jpg') no-repeat center center/cover;
-  color: white;
-  text-align: center;
-  padding: 100px 20px;
-  position: relative;
-}
+
 .hero-banner::after {
   content: '';
   position: absolute;
