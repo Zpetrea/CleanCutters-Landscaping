@@ -358,3 +358,29 @@ body {
 main {
   flex: 1;
 }
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.header-flex .logo {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header-flex nav {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.header-flex .header-contact {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
