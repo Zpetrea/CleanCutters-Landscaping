@@ -288,13 +288,14 @@ footer {
   filter: invert(18%) sepia(8%) saturate(558%) hue-rotate(169deg) brightness(96%) contrast(87%);
 }
 
-/* Split Banner Hero Section */
+/* Adjusted Split Banner Hero Section */
 .split-banner {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
   width: 100%;
-  min-height: 300px;
+  max-height: 400px;
+  overflow: hidden;
 }
 
 .hero-img-half {
@@ -308,11 +309,13 @@ footer {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .hero-text-half {
   flex: 1;
   min-width: 300px;
+  max-height: 400px;
   background-color: #2C3E50;
   color: white;
   padding: 40px 30px;
