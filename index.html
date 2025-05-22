@@ -99,9 +99,16 @@
 
 <script>
 function handleSubmit(form) {
+  // Clear all form fields
+  setTimeout(() => {
+    form.reset();
+  }, 100); // delay so it doesn't interfere with submission
+
+  // Show confirmation popup
   alert('Thank you! Your message has been submitted successfully.');
-  return true;
+  return true; // allow form to continue submitting
 }
+
 </script></div>
     </section>
 
