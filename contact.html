@@ -23,53 +23,31 @@
 
 </head>
 <body>
-
-<section class="hero-split-banner">
-  <div class="hero-image">
-    <img src="assets/charlotte-banner.png" alt="Charlotte Skyline" />
-  </div>
-  <div class="hero-text">
-    <p>
-      When you're looking for top-notch Charlotte landscaping services, contact Clean Cutters Landscaping. 
-      We’ve served the greater Charlotte area for decades, and we’re proud to continue building our legacy 
-      of offering the highest quality custom landscape and maintenance solutions.
-      Give us a call or use the form below to get in touch with us today!
-    </p>
-    <p><strong>Office Address:</strong> 919 Exchange St, Charlotte, NC 28208<br>
-    <strong>Telephone:</strong> <a href="tel:8283816257">(828) 381-6257</a></p>
-  </div>
-</section>
-
-
-<section class="hero-banner-contact">
-  <div class="hero-contact-wrapper">
-    <div class="hero-img">
-      <img src="assets/charlotte-banner.jpg" alt="Charlotte Skyline">
-    </div>
-    <div class="hero-info">
-      <p>When you're looking for top-notch Charlotte landscaping services, contact Clean Cutters Landscaping. We've proudly served the greater Charlotte area with custom outdoor services. Call or use the form below to get in touch!</p>
-      <p><strong>Office Address:</strong> 919 Exchange St, Charlotte, NC 28208<br>
-      <strong>Telephone:</strong> (828) 381-6257</p>
-    </div>
-  </div>
-</section>
-
   
-  <header class="main-header">
-    <div class="container nav-container">
-      <div class="logo">
-        <img src="assets/logo.png" alt="Clean Cutters Logo">
-      </div>
-      <nav>
-        <div id="menu-toggle" class="menu-icon">☰</div>
-        <ul class="nav-links" id="mobile-nav">
-          <li><a href="index.html" >Home</a></li>
-          <li><a href="about.html" >About</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
-      </nav>
+  
+<header class="main-header">
+  <div class="container nav-container">
+    <div class="logo">
+      <img src="assets/logo.png" alt="Clean Cutters Logo">
     </div>
-  </header>
+    <nav class="nav-center">
+      <ul class="nav-links" id="mobile-nav">
+        <li><a href="index.html" class="">Home</a></li>
+        <li><a href="about.html" class="">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-contact">
+      <a href="tel:8283816257" class="phone-number">(828) 381-6257</a>
+      <div class="social-icons">
+        <a href="#"><img src="assets/facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="assets/instagram.svg" alt="Instagram"></a>
+        <a href="#"><img src="assets/linkedin.svg" alt="LinkedIn"></a>
+      </div>
+    </div>
+  </div>
+</header>
+
 
   <main class="container">
     <section class="featured-services">
@@ -78,23 +56,31 @@
       <form action="submit_contact.php" method="POST" class="styled-form">
         <div class="form-row">
           <input type="text" name="name" placeholder="Full Name" required>
-          <input type="text" name="city" placeholder="City" required>
- placeholder="Full Name" required>
           <input type="text" name="phone" placeholder="Phone Number" required>
         </div>
         <div class="form-row">
           <input type="email" name="email" placeholder="Email" required>
           <input type="text" name="city" placeholder="City">
         </div>
-        <textarea name="message" rows="4" placeholder="Message" required></textarea>
+        <textarea name="message" rows="4" placeholder="Tell us about your project" required></textarea>
         <button type="submit">Submit</button>
       </form>
     </section>
   </main>
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Clean Cutters Landscaping. All rights reserved.</p>
+  
+<footer class="site-footer">
+  <div class="container footer-container">
+    <p>&copy; 2025 Clean Cutters Landscaping. All rights reserved.</p>
+    <div class="footer-contact">
+      <a href="tel:8283816257">(828) 381-6257</a>
+      <div class="social-icons">
+        <a href="#"><img src="assets/facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="assets/instagram.svg" alt="Instagram"></a>
+        <a href="#"><img src="assets/linkedin.svg" alt="LinkedIn"></a>
+      </div>
     </div>
-  </footer>
+  </div>
+</footer>
+
 </body>
 </html>
