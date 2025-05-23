@@ -391,13 +391,20 @@ main {
   background-repeat: repeat;
   background-size: contain;
   background-position: center;
-  background-color: transparent; /* ensure no solid overlay */
-  opacity: 0.15;                 /* matches original subtle style */
+  background-color: transparent;
+  opacity: 0.15; /* subtle effect */
   padding: 60px 0;
+  position: relative;
+  z-index: 0;
+}
+
+/* ✅ Ensures inner content stays fully visible and unaffected */
+.background-decor * {
   position: relative;
   z-index: 1;
   opacity: 1;
 }
+
 
 
 
