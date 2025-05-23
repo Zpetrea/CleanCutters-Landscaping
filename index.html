@@ -20,7 +20,7 @@
     });
   </script>
 </head>
-<body style="transition: background-color 0.5s ease;">
+<body>
   
 
 <header class="main-header">
@@ -137,24 +137,6 @@ function handleSubmit(form) {
     </div>
   </div>
 </footer>
-
-
-<script>
-const lightGreen = [168, 213, 186]; // #a8d5ba
-const darkGreen = [30, 80, 60];     // #1e503c
-
-window.addEventListener("scroll", () => {
-  const scrollY = window.scrollY;
-  const docHeight = document.body.scrollHeight - window.innerHeight;
-  const scrollRatio = Math.min(scrollY / docHeight, 1);
-
-  const currentColor = lightGreen.map((start, i) =>
-    Math.round(start + (darkGreen[i] - start) * scrollRatio)
-  );
-
-  document.body.style.backgroundColor = `rgb(${currentColor.join(",")})`;
-});
-</script>
 
 </body>
 </html>
