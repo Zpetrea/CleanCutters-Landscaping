@@ -386,25 +386,18 @@ main {
 }
 
 .background-decor {
-  position: relative;
   width: 100%;
-  padding: 60px 0;
-  z-index: 1;
-  overflow: hidden;
-}
-
-.background-decor::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
   background-image: url('images/geometric-pattern.png');
+  background-color: rgba(255, 255, 255, 0.1); /* subtle overlay color */
+  background-blend-mode: multiply;
   background-repeat: repeat;
   background-size: contain;
   background-position: center;
-  opacity: 0.15;
+  padding: 60px 0;
+  position: relative;
   z-index: 0;
-  pointer-events: none;
 }
+
 
 
 
