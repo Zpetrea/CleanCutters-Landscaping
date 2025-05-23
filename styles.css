@@ -386,24 +386,26 @@ main {
 }
 
 .background-decor {
+  position: relative;
   width: 100%;
+  padding: 60px 0;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.background-decor::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
   background-image: url('images/geometric-pattern.png');
   background-repeat: repeat;
   background-size: contain;
   background-position: center;
-  background-color: transparent;
-  opacity: 0.15; /* subtle effect */
-  padding: 60px 0;
-  position: relative;
+  opacity: 0.15;
   z-index: 0;
+  pointer-events: none;
 }
 
-/* ✅ Ensures inner content stays fully visible and unaffected */
-.background-decor * {
-  position: relative;
-  z-index: 1;
-  opacity: 1;
-}
 
 
 
