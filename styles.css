@@ -394,7 +394,6 @@ main {
   height: 33vh;
   background-image: url('images/geometric-pattern.png');
   background-repeat: repeat;
-  background-blend-mode: overlay;
   background-size: contain;
   opacity: 0.15;
   pointer-events: none;
