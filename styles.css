@@ -386,19 +386,32 @@ main {
 }
 
 .background-decor {
+  position: relative;
+  padding: 60px 0;
+  z-index: 1;
+}
+
+/* This creates the subtle, transparent background design */
+.background-decor::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
   width: 100%;
+  height: 100%;
   background-image: url('images/geometric-pattern.png');
-  background-color: rgba(255, 255, 255, 0.1); /* subtle overlay color */
-  background-blend-mode: multiply;
   background-repeat: repeat;
   background-size: contain;
   background-position: center;
-  padding: 60px 0;
-  position: relative;
+  filter: opacity(0.15); /* ✅ This makes the pattern transparent */
   z-index: 0;
+  pointer-events: none;
 }
 
-
+/* Ensure all actual content stays sharp and visible */
+.background-decor * {
+  position: relative;
+  z-index: 1;
+}
 
 
 
