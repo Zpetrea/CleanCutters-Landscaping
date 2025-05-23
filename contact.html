@@ -22,7 +22,7 @@
   </script>
 
 </head>
-<body>
+<body style="transition: background-color 0.5s ease;">
   
   
 
@@ -31,9 +31,7 @@
     <div class="logo">
       <img src="assets/logo.png" alt="Clean Cutters Logo">
     </div>
-    
-<button class="hamburger" onclick="toggleMenu()">☰</button>
-<nav>
+    <nav>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -112,11 +110,23 @@ function handleSubmit(form) {
   </div>
 </footer>
 
+
 <script>
-function toggleMenu() {
-  const nav = document.querySelector('.nav-links');
-  if (nav) nav.classList.toggle('active');
-}
+const lightGreen = [168, 213, 186]; // #a8d5ba
+const darkGreen = [30, 80, 60];     // #1e503c
+
+window.addEventListener("scroll", () => {
+  const scrollY = window.scrollY;
+  const docHeight = document.body.scrollHeight - window.innerHeight;
+  const scrollRatio = Math.min(scrollY / docHeight, 1);
+
+  const currentColor = lightGreen.map((start, i) =>
+    Math.round(start + (darkGreen[i] - start) * scrollRatio)
+  );
+
+  document.body.style.backgroundColor = `rgb(${currentColor.join(",")})`;
+});
 </script>
+
 </body>
 </html>
