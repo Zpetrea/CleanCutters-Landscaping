@@ -398,32 +398,4 @@ main {
   gap: 20px;
 }
 
-.background-decor {
-  position: relative;
-  padding: 60px 0;
-  z-index: 1;
-}
-
-/* This creates the subtle, transparent background design */
-.background-decor::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('images/geometric-pattern.png');
-  background-repeat: repeat;
-  background-size: 500px 500px;  /* or 150px 150px for tighter pattern */
-  background-position: center;
-  filter: opacity(0.15); /* ✅ This makes the pattern transparent */
-  z-index: 0;
-  pointer-events: none;
-}
-
-/* Ensure all actual content stays sharp and visible */
-.background-decor * {
-  position: relative;
-  z-index: 1;
-}
-
 
