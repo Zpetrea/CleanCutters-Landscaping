@@ -1,29 +1,9 @@
-html, body {
-  height: 100%;
+body {
   margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
   font-family: 'Roboto', sans-serif;
   color: #333;
   background-color: #f4f4f4;
 }
-
-body > header,
-body > section.background-decor,
-body > footer {
-  width: 100%;
-}
-
-.background-decor {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  padding: 60px 0;
-  z-index: 1;
-}
-
 .container {
   max-width: 1200px;
   margin: auto;
@@ -310,14 +290,13 @@ footer {
 .about-hero {
   display: flex;
   width: 100%;
-  min-height: 60vh;
-  height: auto;
-  align-items: stretch;
+  max-height: 400px;
+  overflow: hidden;
 }
 .about-img-half {
   flex: 1;
   min-width: 300px;
-  height: 100%;
+  max-height: 400px;
 }
 .about-img-half img {
   width: 100%;
@@ -327,7 +306,7 @@ footer {
 .about-text-half {
   flex: 1;
   min-width: 300px;
-  height: 100%;
+  max-height: 400px;
   background-color: #2C3E50;
   color: white;
   padding: 40px 30px;
@@ -340,14 +319,13 @@ footer {
 .contact-hero {
   display: flex;
   width: 100%;
-  min-height: 60vh;
-  height: auto;
-  align-items: stretch;
+  max-height: 400px;
+  overflow: hidden;
 }
 .contact-img-half {
   flex: 1;
   min-width: 300px;
-  height: 100%;
+  max-height: 400px;
 }
 .contact-img-half img {
   width: 100%;
@@ -357,7 +335,7 @@ footer {
 .contact-text-half {
   flex: 1;
   min-width: 300px;
-  height: 100%;
+  max-height: 400px;
   background-color: #2C3E50;
   color: white;
   padding: 40px 30px;
@@ -366,52 +344,17 @@ footer {
   justify-content: center;
 }
 /* Sticky Footer Layout */
+html, body {
+  height: 100%;
+  margin: 0;
+}
 
-
-
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
 main {
   flex: 1;
-}
-
-.header-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-}
-
-.header-flex .logo {
-  flex: 1;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.header-flex nav {
-  flex: 2;
-  display: flex;
-  justify-content: center;
-}
-
-.header-flex .header-contact {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-  gap: 20px;
-}
-
-
-
-.about-img-half,
-.contact-img-half {
-  display: flex;
-  align-items: stretch;
-}
-
-.about-img-half img,
-.contact-img-half img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  display: block;
 }
