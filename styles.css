@@ -314,11 +314,10 @@ footer {
   height: auto;
   align-items: stretch;
 }
-
 .about-img-half {
   flex: 1;
   min-width: 300px;
-  max-height: 400px;
+  height: 100%;
 }
 .about-img-half img {
   width: 100%;
@@ -328,7 +327,7 @@ footer {
 .about-text-half {
   flex: 1;
   min-width: 300px;
-  max-height: 400px;
+  height: 100%;
   background-color: #2C3E50;
   color: white;
   padding: 40px 30px;
@@ -345,11 +344,10 @@ footer {
   height: auto;
   align-items: stretch;
 }
-
 .contact-img-half {
   flex: 1;
   min-width: 300px;
-  max-height: 400px;
+  height: 100%;
 }
 .contact-img-half img {
   width: 100%;
@@ -359,7 +357,7 @@ footer {
 .contact-text-half {
   flex: 1;
   min-width: 300px;
-  max-height: 400px;
+  height: 100%;
   background-color: #2C3E50;
   color: white;
   padding: 40px 30px;
@@ -403,3 +401,17 @@ main {
 }
 
 
+
+.about-img-half,
+.contact-img-half {
+  display: flex;
+  align-items: stretch;
+}
+
+.about-img-half img,
+.contact-img-half img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
