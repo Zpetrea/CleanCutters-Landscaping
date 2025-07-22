@@ -28,14 +28,18 @@ main {
 
 /* Header */
 .main-header {
+  height: 400px;
+  display: flex;
+  align-items: center;
   background-color: #ffffff;
   color: #2C3E50;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  padding: 10px 0 5px;
+  padding: 0;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
+
 
 .nav-container {
   display: flex;
