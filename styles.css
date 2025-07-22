@@ -313,16 +313,17 @@ main {
 .contact-hero {
   display: flex;
   width: 100%;
-  min-height: 60vh;
-  height: auto;
+  height: 400px; /* Match image + text height */
   align-items: stretch;
 }
 
 .about-img-half,
-.contact-img-half {
+.contact-img-half,
+.about-text-half,
+.contact-text-half {
   flex: 1;
   min-width: 300px;
-  max-height: 400px;
+  height: 100%;
 }
 
 .about-img-half img,
@@ -334,9 +335,6 @@ main {
 
 .about-text-half,
 .contact-text-half {
-  flex: 1;
-  min-width: 300px;
-  max-height: 400px;
   background-color: #013d20;
   color: white;
   padding: 40px 30px;
@@ -344,6 +342,7 @@ main {
   flex-direction: column;
   justify-content: center;
 }
+
 
 /* Shared Split Banner Wrapper */
 .split-banner {
