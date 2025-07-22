@@ -313,7 +313,7 @@ main {
 .contact-hero {
   display: flex;
   width: 100%;
-  height: 400px; /* Match image + text height */
+  height: 400px; /* Lock the full banner height */
   align-items: stretch;
 }
 
@@ -330,8 +330,9 @@ main {
 .contact-img-half img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover;  /* Maintain aspect ratio while filling the height */
 }
+
 
 .about-text-half,
 .contact-text-half {
