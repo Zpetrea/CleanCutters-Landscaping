@@ -339,4 +339,10 @@ main {
   justify-content: center;
 }
 
+/* Shared Split Banner Wrapper */
+.split-banner {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
 
